@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="main.css">
+  <title>Bank app</title>
+</head>
+<body>
+
+  <div class="jumbotron text-center">
+    <h3 class="display-4">Bank App</h3>
+    <button id="accountsBtn" class="btn btn-primary">Accounts</button>
+    <button id="addAccountBtn" class="btn btn-info">Add Account</button>
+    <button id="editDeleteBtn" class="btn btn-warning">Edit/Delete</button>
+    <button id="withdrawBtn" class="btn btn-danger">Widthdraw</button>
+  </div>
+  <div id="mainRow" class="row">
+    <div class="col-10 offset-1">
+      <h3 class="display-5">Accounts</h3>
+      <div class="row">
+        <div class="col-10 offset-1">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Deposit</th>
+                <th>Credit Card</th>
+              </tr>
+            </thead>
+            <tbody id="mainTbody"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="formRow" class="row">
+    <div class="col-10 offset-1">
+      <h3 class="display-5">Add Account</h3>
+      <div class="row">
+        <div class="col-10 offset-1">
+          <input id="addFormId" type="text" placeholder="id" class="form-control"><br>
+          <input id="addFormName" type="text" placeholder="name" class="form-control"><br>
+          <input id="addFormDeposit" type="text" placeholder="deposit" class="form-control"><br>
+          <input id="addFormCard" type="text" placeholder="credit card" class="form-control"><br>
+          <button id="addBtn" class="btn btn-primary form-control">ADD</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="editFormRow" class="row">
+    <div class="col-10 offset-1">
+      <h3 class="display-5">Edit Account</h3>
+      <div class="row">
+        <div class="col-10 offset-1">
+          <input id="editFormId" type="text" placeholder="id" class="form-control"><br>
+          <input id="editFormName" type="text" placeholder="name" class="form-control"><br>
+          <input id="editFormDeposit" type="text" placeholder="deposit" class="form-control"><br>
+          <input id="editFormCard" type="text" placeholder="credit card" class="form-control"><br>
+          <button id="editFormBtn" class="btn btn-info form-control">EDIT</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="editTableRow" class="row">
+    <div class="col-10 offset-1">
+      <h3 class="display-5">Edit/Delete</h3>
+      <div class="row">
+        <div class="col-10 offset-1">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Deposit</th>
+                <th>Credit Card</th>
+                <th>Edit</th>
+                <th>Delete</th>
+              </tr>
+            </thead>
+            <tbody id="editTbody"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="showWithdrawRow" class="row">
+    <div class="col-10 offset-1">
+      <h3 class="display-5">Withdraw</h3>
+      <div class="row">
+        <div class="col-10 offset-1">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Deposit</th>
+                <th>Credit Card</th>
+                <th>Widthdraw</th>
+              </tr>
+            </thead>
+            <tbody id="withdrawTbody"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="withdrawInputRow" class="row">
+    <div class="col-10 offset-1">
+      <h3 class="display-5">Withdraw amount</h3>
+      <div class="row">
+        <div class="col-10 offset-1">
+          <input id="withdrawFormDeposit" type="text" placeholder="deposit" class="form-control" disabled><br>
+          <input id="withdrawFormInput" type="number" placeholder="iznos" class="form-control"><br>
+          <button id="withdrawFormBtn" class="btn btn-info form-control">WITHDRAW</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<script src="main.js"></script>
+<script src="main2.js"></script>
+</body>
+</html>
